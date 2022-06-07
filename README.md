@@ -1,1 +1,5 @@
 # spectral_substraction
+El objetivo de este trabajo es implementar un algoritmo para eliminar ruido de señales de audio siguiendo el procedimiento de substracción espectral por el método de Boll [1]. Consiste en sustraer el espectro de ruido calculado durante un período de tiempo no discursivo. Se asume que el ruido es estacionario y que una porción del inicio de la señal es un periodo de tiempo no discursivo. Luego se atenúa el ruido residual que deja la substracción realizando una rectificación de media onda y reducción de residuo del ruido. Se obtuvo que el algoritmo es útil para señales discrusivas pero ineficiente para señales musicales, dado que el ruido remanente es muy significativo.
+
+# Spectral substraction filter
+Implementation of Boll's spectral substraction algorithm. Noise spectrum is obtained from a selected period of time where there is no information. Noise should be stationary. Half wave rectifier is used to reduce residual noise. The algorithm is usefull for discursive signals where noise is stationary, random wide-band noise produces high residual noise at the output.
